@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 function Display(props){
     return (
         <div>
-            <p>Result {props.result}</p>
+            <p>{props.result}</p>
         </div>
     )
 }
@@ -11,5 +12,9 @@ function Display(props){
 Display.defaultProps = {
     result: 0,
   }
+
+Display.prototype = {
+    result: PropTypes.string.isRequired
+}
 
 export default Display
