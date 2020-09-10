@@ -4,14 +4,31 @@ import ButtonPanel from './ButtonPanel';
 import '../App.css';
 import calculate from '../logic/calculate';
 
-function App() {
-  return (
-    <div className="App">
-      <Display />
-      <ButtonPanel />
-      <calculate />
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next : null,
+      operation : null
+    }
+
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleClick(){
+    
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Display />
+        <ButtonPanel />
+        <calculate />
+      </div>
+    );
+  }
 }
 
 export default App;
