@@ -2,15 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Button({ buttonName, color, wide }) {
-  if (wide) {
-    return (
-      <div className="btn-style-new">
-        <button type="button" className={color}>{buttonName}</button>
-      </div>
-    );
-  }
   return (
-    <div className="btn-division">
+    <div className={wide ? 'btn-style-new' : 'btn-division'}>
       <button type="button" className={color}>{buttonName}</button>
     </div>
   );
