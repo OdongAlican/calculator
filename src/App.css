@@ -36,6 +36,7 @@
   font-weight: bolder;
   font-size: large;
   outline: none;
+  border: 1px solid #999;
 }
 
 .btn-style :hover {
