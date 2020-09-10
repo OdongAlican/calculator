@@ -1,7 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 .App {
   width: 700px;
 }
@@ -37,7 +38,7 @@
   outline: none;
 }
 
-.btn-style :hover{
+.btn-style :hover {
   background-color: #777;
 }
 
