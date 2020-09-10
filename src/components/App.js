@@ -21,7 +21,7 @@ class App extends React.Component {
   }
 
   render() {
-    const {next, total, operation} = this.state;
+    const { next, total, operation } = this.state;
     return (
       <div className="App">
         <Display result={next || total || operation || '0'} />
