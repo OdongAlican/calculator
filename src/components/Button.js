@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 function Button({ buttonName }) {
   return (
-    <div>
-      <button type="button">{buttonName}</button>
+    <div className="btn-division">
+      <button type="button"className="btn-style" >{buttonName}</button>
     </div>
   );
 }
