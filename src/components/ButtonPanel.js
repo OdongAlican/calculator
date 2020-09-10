@@ -5,33 +5,33 @@ function ButtonPanel() {
   return (
     <div>
       <div className="button-sections">
-        <Button buttonName="AC" className="btn-style" />
-        <Button buttonName="+/-" className="btn-style"/>
-        <Button buttonName="%" className="btn-style"/>
-        <Button buttonName="÷" className="btn-style"/>
+        <Button buttonName="AC" color="btn-style" />
+        <Button buttonName="+/-" color="btn-style" />
+        <Button buttonName="%" color="btn-style" />
+        <Button buttonName="÷" color="btn-style" />
       </div>
       <div className="button-sections">
-        <Button buttonName="7" className="btn-style"/>
-        <Button buttonName="8" className="btn-style"/>
-        <Button buttonName="9" className="btn-style"/>
-        <Button buttonName="X" className="btn-style"/>
+        <Button buttonName="7" color="btn-style" />
+        <Button buttonName="8" color="btn-style" />
+        <Button buttonName="9" color="btn-style" />
+        <Button buttonName="X" color="btn-style" />
       </div>
       <div className="button-sections">
-        <Button buttonName="4" className="btn-style"/>
-        <Button buttonName="5" className="btn-style"/>
-        <Button buttonName="6" className="btn-style"/>
-        <Button buttonName="-" className="btn-style"/>
+        <Button buttonName="4" color="btn-style" />
+        <Button buttonName="5" color="btn-style" />
+        <Button buttonName="6" color="btn-style" />
+        <Button buttonName="-" color="btn-style" />
       </div>
       <div className="button-sections">
-        <Button buttonName="1" className="btn-style"/>
-        <Button buttonName="2" className="btn-style"/>
-        <Button buttonName="3" className="btn-style"/>
-        <Button buttonName="+" className="btn-style"/>
+        <Button buttonName="1" color="btn-style" />
+        <Button buttonName="2" color="btn-style" />
+        <Button buttonName="3" color="btn-style" />
+        <Button buttonName="+" color="btn-style" />
       </div>
       <div className="button-sections">
-        <Button buttonName="0" className="zero-btn" />
-        <Button buttonName="." className="btn-style"/>
-        <Button buttonName="=" className="btn-style"/>
+        <Button buttonName="0" color="btn-style" wide />
+        <Button buttonName="." color="btn-style" />
+        <Button buttonName="=" color="btn-style" />
       </div>
     </div>
   );
