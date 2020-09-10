@@ -1,12 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Button({ buttonName }) {
-  return (
-    <div className="btn-division">
-      <button type="button"className="btn-style" >{buttonName}</button>
-    </div>
-  );
+function Button({ buttonName, className}) {
+  if(buttonName === '0'){
+    return (
+      <div className = "btn-style-new" >
+        <button type="button" className = { className } >{buttonName}</button>
+      </div>
+    );
+  }else{
+    return (
+      <div className = "btn-division" >
+        <button type="button" className = { className } >{buttonName}</button>
+      </div>
+    );
+  }
 }
 
 Button.propTypes = {

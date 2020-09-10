@@ -5,33 +5,33 @@ function ButtonPanel() {
   return (
     <div>
       <div className="button-sections">
-        <Button buttonName="AC" />
-        <Button buttonName="+/-" />
-        <Button buttonName="%" />
-        <Button buttonName="÷" />
+        <Button buttonName="AC" className="btn-style" />
+        <Button buttonName="+/-" className="btn-style"/>
+        <Button buttonName="%" className="btn-style"/>
+        <Button buttonName="÷" className="btn-style"/>
       </div>
       <div className="button-sections">
-        <Button buttonName="7" />
-        <Button buttonName="8" />
-        <Button buttonName="9" />
-        <Button buttonName="X" />
+        <Button buttonName="7" className="btn-style"/>
+        <Button buttonName="8" className="btn-style"/>
+        <Button buttonName="9" className="btn-style"/>
+        <Button buttonName="X" className="btn-style"/>
       </div>
       <div className="button-sections">
-        <Button buttonName="4" />
-        <Button buttonName="5" />
-        <Button buttonName="6" />
-        <Button buttonName="-" />
+        <Button buttonName="4" className="btn-style"/>
+        <Button buttonName="5" className="btn-style"/>
+        <Button buttonName="6" className="btn-style"/>
+        <Button buttonName="-" className="btn-style"/>
       </div>
       <div className="button-sections">
-        <Button buttonName="1" />
-        <Button buttonName="2" />
-        <Button buttonName="3" />
-        <Button buttonName="+" />
+        <Button buttonName="1" className="btn-style"/>
+        <Button buttonName="2" className="btn-style"/>
+        <Button buttonName="3" className="btn-style"/>
+        <Button buttonName="+" className="btn-style"/>
       </div>
       <div className="button-sections">
-        <Button buttonName="0" className="zero-btn"/>
-        <Button buttonName="." />
-        <Button buttonName="=" />
+        <Button buttonName="0" className="zero-btn" />
+        <Button buttonName="." className="btn-style"/>
+        <Button buttonName="=" className="btn-style"/>
       </div>
     </div>
   );
