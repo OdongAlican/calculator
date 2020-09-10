@@ -4,34 +4,34 @@ import Button from './Button';
 function ButtonPanel() {
   return (
     <div>
-      <div>
-        <Button buttonName="AC" />
-        <Button buttonName="+/-" />
-        <Button buttonName="%" />
-        <Button buttonName="÷" />
+      <div className="button-sections">
+        <Button buttonName="AC" color="btn-style" />
+        <Button buttonName="+/-" color="btn-style" />
+        <Button buttonName="%" color="btn-style" />
+        <Button buttonName="÷" color="btn-style" />
       </div>
-      <div>
-        <Button buttonName="7" />
-        <Button buttonName="8" />
-        <Button buttonName="9" />
-        <Button buttonName="X" />
+      <div className="button-sections">
+        <Button buttonName="7" color="btn-style" />
+        <Button buttonName="8" color="btn-style" />
+        <Button buttonName="9" color="btn-style" />
+        <Button buttonName="X" color="btn-style" />
       </div>
-      <div>
-        <Button buttonName="4" />
-        <Button buttonName="5" />
-        <Button buttonName="6" />
-        <Button buttonName="-" />
+      <div className="button-sections">
+        <Button buttonName="4" color="btn-style" />
+        <Button buttonName="5" color="btn-style" />
+        <Button buttonName="6" color="btn-style" />
+        <Button buttonName="-" color="btn-style" />
       </div>
-      <div>
-        <Button buttonName="1" />
-        <Button buttonName="2" />
-        <Button buttonName="3" />
-        <Button buttonName="+" />
+      <div className="button-sections">
+        <Button buttonName="1" color="btn-style" />
+        <Button buttonName="2" color="btn-style" />
+        <Button buttonName="3" color="btn-style" />
+        <Button buttonName="+" color="btn-style" />
       </div>
-      <div>
-        <Button buttonName="0" />
-        <Button buttonName="." />
-        <Button buttonName="=" />
+      <div className="button-sections">
+        <Button buttonName="0" color="btn-style" wide />
+        <Button buttonName="." color="btn-style" />
+        <Button buttonName="=" color="btn-style" />
       </div>
     </div>
   );
