@@ -5,6 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Live Version
 [Live Demo Link](https://appcalcul.herokuapp.com/)
 
+![screenshot](public/calculator.png)
+
 ## Built with
 - React
 - CSS
