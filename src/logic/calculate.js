@@ -5,8 +5,20 @@ const calculate = (data, btnName) => {
   let { total, next, operation } = data;
   const symbols = ['+', '-', 'x', '÷', '%'];
 
-  if (symbols.includes(btnName)) {
-    total = operate(total, next, operation);
+  if (symbols.includes(btnName) && total && next) {
+    return {
+      total: operate(total, next, operation).toString(),
+      operation: btnName,
+      next: null,
+    };
+  }
+
+  if (symbols.includes(btnName) && !next && total) {
+    return {
+      total,
+      operation: btnName,
+      next,
+    };
   }
 
   if (values.includes(btnName) || btnName === '.') {
