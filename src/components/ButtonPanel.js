@@ -16,7 +16,7 @@ function ButtonPanel(props) {
         <Button buttonName="7" color="btn-style" handleClick={clickHandler} />
         <Button buttonName="8" color="btn-style" handleClick={clickHandler} />
         <Button buttonName="9" color="btn-style" handleClick={clickHandler} />
-        <Button buttonName="X" color="btn-style" handleClick={clickHandler} />
+        <Button buttonName="x" color="btn-style" handleClick={clickHandler} />
       </div>
       <div className="button-sections">
         <Button buttonName="4" color="btn-style" handleClick={clickHandler} />

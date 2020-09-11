@@ -2,7 +2,7 @@ import operate from './operate';
 
 const calculate = (data, btnName) => {
   const values = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-  let { total, next, operation } = data;
+  const { total, next, operation } = data;
   const symbols = ['+', '-', 'x', '÷', '%'];
 
   if (symbols.includes(btnName) && total && next) {
@@ -21,24 +21,80 @@ const calculate = (data, btnName) => {
     };
   }
 
-  if (values.includes(btnName) || btnName === '.') {
-    total = next;
+  if (symbols.includes(btnName) && next && !total) {
+    return {
+      total: next,
+      operation: btnName,
+      next: null,
+    };
   }
 
-  if (btnName === '+/-') {
-    total *= -1;
-    next *= -1;
-  } else if (btnName === 'AC') {
-    total = 0;
-    next = null;
-    operation = null;
-  } else {
-    total = null;
-    next = null;
-    operation = null;
+  if (total === 'ERROR') {
+    return {
+      total: null,
+      operation: null,
+      next: null,
+    };
   }
 
-  return (total, next, operation);
+  if (btnName === '+/-' && !next && total && total !== 'ERROR') {
+    return {
+      total: (total * -1).toString(),
+      next,
+      operation,
+    };
+  }
+
+  if (values.includes(btnName)) {
+    return {
+      total,
+      next: next ? `${next}${btnName}` : `${btnName}`,
+      operation,
+    };
+  }
+
+  if (btnName === '+/-' && next && total !== 'ERROR') {
+    return {
+      total,
+      next: (next * -1).toString(),
+      operation,
+    };
+  }
+
+  if (btnName === 'AC') {
+    return {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+
+  if (btnName === '=') {
+    return {
+      total: operate(total, next, operation),
+      next: null,
+      operation: null,
+    };
+  }
+
+  if (btnName === '.') {
+    if (!next) {
+      return {
+        total,
+        next: '0.',
+        operation,
+      };
+    }
+    if (next && !next.includes('.')) {
+      return {
+        total,
+        next: `${next}.`,
+        operation,
+      };
+    }
+  }
+
+  return [total, next, operation];
 };
 
 export default calculate;
