@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 function Display({ result }) {
   return (
     <div className="display">
-      <p>{result}</p>
+      { result }
     </div>
   );
 }
 
 Display.defaultProps = {
-  result: 0,
+  result: '0',
 };
 
 Display.propTypes = {

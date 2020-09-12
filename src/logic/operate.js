@@ -2,8 +2,8 @@ import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
   let result = 0;
-  const firstNumber = Big(numberOne);
-  const secondNumber = Big(numberTwo);
+  const firstNumber = Big(numberOne || '0');
+  const secondNumber = Big(numberTwo || '0');
 
   if (operation === '+') {
     result = firstNumber.plus(secondNumber);
@@ -18,14 +18,18 @@ const operate = (numberOne, numberTwo, operation) => {
   }
 
   if (operation === '÷') {
-    result = firstNumber.div(secondNumber);
+    try {
+      result = firstNumber.div(secondNumber);
+    } catch (err) {
+      result = 'ERROR';
+    }
   }
 
   if (operation === '%') {
-    result = firstNumber.mod(secondNumber);
+    result = firstNumber.times(Big(0.01));
   }
 
-  return result;
+  return result.toString();
 };
 
 export default operate;
