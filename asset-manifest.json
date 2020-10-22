@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/OdongAlican/calculator/static/css/main.c5f45b72.chunk.css",
-    "main.js": "/OdongAlican/calculator/static/js/main.d71a8ee7.chunk.js",
-    "main.js.map": "/OdongAlican/calculator/static/js/main.d71a8ee7.chunk.js.map",
-    "runtime-main.js": "/OdongAlican/calculator/static/js/runtime-main.31f146ec.js",
-    "runtime-main.js.map": "/OdongAlican/calculator/static/js/runtime-main.31f146ec.js.map",
-    "static/js/2.c606ba18.chunk.js": "/OdongAlican/calculator/static/js/2.c606ba18.chunk.js",
-    "static/js/2.c606ba18.chunk.js.map": "/OdongAlican/calculator/static/js/2.c606ba18.chunk.js.map",
-    "index.html": "/OdongAlican/calculator/index.html",
-    "precache-manifest.f68e687de261a39518e1c77dd75d0c63.js": "/OdongAlican/calculator/precache-manifest.f68e687de261a39518e1c77dd75d0c63.js",
-    "service-worker.js": "/OdongAlican/calculator/service-worker.js",
-    "static/css/main.c5f45b72.chunk.css.map": "/OdongAlican/calculator/static/css/main.c5f45b72.chunk.css.map",
-    "static/js/2.c606ba18.chunk.js.LICENSE.txt": "/OdongAlican/calculator/static/js/2.c606ba18.chunk.js.LICENSE.txt"
+    "main.css": "/calculator/static/css/main.c5f45b72.chunk.css",
+    "main.js": "/calculator/static/js/main.9d5aca7a.chunk.js",
+    "main.js.map": "/calculator/static/js/main.9d5aca7a.chunk.js.map",
+    "runtime-main.js": "/calculator/static/js/runtime-main.51f5447e.js",
+    "runtime-main.js.map": "/calculator/static/js/runtime-main.51f5447e.js.map",
+    "static/js/2.c606ba18.chunk.js": "/calculator/static/js/2.c606ba18.chunk.js",
+    "static/js/2.c606ba18.chunk.js.map": "/calculator/static/js/2.c606ba18.chunk.js.map",
+    "index.html": "/calculator/index.html",
+    "precache-manifest.6dd06ebf210186159a50b72503992bfb.js": "/calculator/precache-manifest.6dd06ebf210186159a50b72503992bfb.js",
+    "service-worker.js": "/calculator/service-worker.js",
+    "static/css/main.c5f45b72.chunk.css.map": "/calculator/static/css/main.c5f45b72.chunk.css.map",
+    "static/js/2.c606ba18.chunk.js.LICENSE.txt": "/calculator/static/js/2.c606ba18.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.31f146ec.js",
+    "static/js/runtime-main.51f5447e.js",
     "static/js/2.c606ba18.chunk.js",
     "static/css/main.c5f45b72.chunk.css",
-    "static/js/main.d71a8ee7.chunk.js"
+    "static/js/main.9d5aca7a.chunk.js"
   ]
 }
