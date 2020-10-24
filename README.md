@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Live Version
-[Live Demo Link](https://appcalcul.herokuapp.com/)
+[Live Demo Link](https://odongalican.github.io/calculator/)
 
 ![screenshot](public/calculator.png)
 
